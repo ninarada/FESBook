@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    --primary-color: #0F103F;
+    --light-primary-color: #2F2F8A;
+
+    --secondary-color: #3a3db3;
+    --light-secondary-color: #778df8;
+    background-color: var(--primary-color);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(15,16,63,1) 59%, rgba(47,47,138,1) 100%);
+
+}
+
+
+.card-container {
+    background-color: var(--light-primary-color);
+    color: rgba(255, 255, 255, 0.871);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    height: 350px;
+    place-items: center;
+    border-radius: 30px;
+}
+
+.log-container{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 75%;
+}
+
+
+input {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.552);
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+.log-btn {
+    background-color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.898);
+    border: none;
+    border-radius: 20px;
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    box-shadow: 1px 1px 5px #0f103f7b;
+    width: 7rem;
+    margin: 0 auto;
+}
+
+
