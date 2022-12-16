@@ -18,6 +18,8 @@
     place-items: center;
     width: 80%;
     color: white;
+    background-color: var(--primary-color);
+    border-radius: 10px;
 }
 
 h1, h2 {
