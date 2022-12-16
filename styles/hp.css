@@ -22,6 +22,11 @@ main {
     padding-top: 70px;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar {
     background-color: var(--primary-color);
     position: fixed;
