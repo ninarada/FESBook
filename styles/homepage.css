@@ -1,10 +1,12 @@
-
+/*----------------------------------------------------*/
 .welcome-card-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    height: 450px;
+    height: 500px;
+    padding-bottom: 10rem;
+    border-bottom: dashed var(--primary-color);
 }
 
 .big-txt-container {
@@ -14,7 +16,7 @@
     justify-content: center;
     justify-items: center;
     place-items: center;
-    width: 70%;
+    width: 80%;
     color: white;
 }
 
@@ -29,11 +31,91 @@ h1, h2 {
     align-content: center;
     justify-content: center;
     justify-items: center;
-    width: 70%;
+    width: 80%;
 }
 
 #header-img {
     width: 100% ;
+    border-radius: 50%;
 }
 
 
+/*----------------------------------------------------*/
+.preview-container {
+    max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+.file-container {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: var(--primary-color);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.preview-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 400px;
+  }
+
+.file-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    width: 200px;
+    color: white;
+}
+
+.file-container img {
+    width: 100%;
+    
+}

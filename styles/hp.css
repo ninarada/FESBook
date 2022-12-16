@@ -15,7 +15,7 @@ body {
     width: 100%;
     place-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(15,16,63,1) 0%, rgba(47,47,138,1) 100%);
+    background: var(--light-primary-color);
 }
 
 main {
@@ -80,9 +80,10 @@ a, a:hover, a:focus, a:active {
 }
 
 #icons {
-    width: 15%;
+    width: 13%;
     display: flex;
     justify-content: space-between;
+    padding-right: 1em;
 }
 
 .forum {
