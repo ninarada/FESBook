@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sora', sans-serif;
     margin: 0;
     --primary-color: #0F103F;
     --light-primary-color: #2F2F8A;

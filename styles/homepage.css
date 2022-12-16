@@ -6,7 +6,7 @@
     place-items: center;
     height: 500px;
     padding-bottom: 10rem;
-    border-bottom: dashed var(--primary-color);
+    
 }
 
 .big-txt-container {
@@ -20,6 +20,7 @@
     color: white;
     background-color: var(--primary-color);
     border-radius: 10px;
+    box-shadow: 0 0 50px 10px var(--primary-color);
 }
 
 h1, h2 {
@@ -39,10 +40,22 @@ h1, h2 {
 #header-img {
     width: 100% ;
     border-radius: 50%;
+    box-shadow: 0 0 50px 10px var(--primary-color);
 }
 
 
 /*----------------------------------------------------*/
+.text-preview h3{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    place-items: center;
+    color: white;
+    font-style: italic;
+}
+
 .preview-container {
     max-width: 1000px;
   position: relative;
