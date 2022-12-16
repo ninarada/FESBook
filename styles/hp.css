@@ -153,3 +153,63 @@ a, a:hover, a:focus, a:active {
 .lineH {
     border-top: #0f103f71 dashed;
 }
+
+.card-profil-container {
+    display: flex;
+    align-self: center;
+    height:400px;
+    width: 750px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.userdata-img {
+    height: 50px;
+    width: 50px;
+    padding: 1rem 1rem;
+
+}
+.heading-userdataicon {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    align-self:flex-start;
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius:1rem;
+}
+.userdata {
+    display: flex;
+    flex-direction:column;
+    align-self: center;
+    align-content: flex-start;
+    background-color: black;
+}
+.name-surname{
+    display: flex;
+    background-color: white;
+}
+
+.user-photo {
+    height: 90px;
+    width: 90px;
+    border-radius: 6rem ;
+    display: flex;
+    margin: 1rem 0.5rem;
+}
+.space {
+    padding-left:0.5rem;
+    padding-right: 0.5rem;
+}
+.space2 {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.name-surname {
+    display: flex;
+    flex-direction: column;
+}
+.list-of-subjects {
+    padding-left: 1rem;
+} 
