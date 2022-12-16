@@ -1,0 +1,39 @@
+
+.welcome-card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 450px;
+}
+
+.big-txt-container {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    place-items: center;
+    width: 70%;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.header-img-container {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 70%;
+}
+
+#header-img {
+    width: 100% ;
+}
+
+
