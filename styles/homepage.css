@@ -6,7 +6,6 @@
     place-items: center;
     height: 500px;
     padding-bottom: 10rem;
-    
 }
 
 .big-txt-container {
@@ -18,9 +17,9 @@
     place-items: center;
     width: 80%;
     color: white;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); zakomentirano tako da se ne vidi rub?*/ 
     border-radius: 10px;
-    box-shadow: 0 0 50px 10px var(--primary-color);
+    /*box-shadow: 0 0 50px 10px var(--primary-color);*/
 }
 
 h1, h2 {
@@ -40,7 +39,7 @@ h1, h2 {
 #header-img {
     width: 100% ;
     border-radius: 50%;
-    box-shadow: 0 0 50px 10px var(--primary-color);
+    /*box-shadow: 0 0 50px 10px var(--primary-color);*/
 }
 
 
@@ -133,4 +132,57 @@ h1, h2 {
 .file-container img {
     width: 100%;
     
+}
+
+hr {
+    background-color: #ffa230;
+    border: none;
+    content: "";
+    height: 1px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transform-origin: center left;
+    width: 8rem;
+}
+
+#homepage-welcome {
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.2em;
+}
+
+#homepage-description {
+    font-style: italic;
+}
+
+.to-signup-btn {
+    background-color: #fff;
+    border-radius: 290486px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #9013fe;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding: 1.25em 2em;
+    text-shadow: none;
+    transition-property: box-shadow, transform;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    will-change: box-shadow, transform; 
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-top: 15px;
+}
+
+.to-signup-btn:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+    color: #ffa230;
+}
+
+to-signup-btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(0.98) translateY(-2px);
 }
