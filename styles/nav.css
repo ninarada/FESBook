@@ -1,0 +1,193 @@
+/* ----------------------NAVIGACIJSKA TRAKA------------------------*/
+* {box-sizing: border-box;}
+
+.navbar {
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 2px;
+    display: flex ;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+}
+
+.navbar div {
+    color: #f2f2f2;
+    height: 100%;
+    text-decoration: none;
+    margin: 0.2em;
+    align-items: center;
+}
+
+/*---logo---*/
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1em;
+    list-style-type: none;
+    align-items: center;
+}
+
+.logo span {
+    display: inline;
+    padding: 2px;
+}
+
+.logo img {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+/*---search---*/
+
+.search-container {
+    display: flex !important;
+    justify-content: space-between;
+    width: 30%;
+    background-color: var(--white-trans);
+    border-radius: 30px;
+    text-indent: 3%;
+}
+
+.searchbar {
+    background-color: #0f103f00;
+    color: var(--light-primary-color);
+    border: none;
+    width: 100%;
+
+}
+
+.fa-magnifying-glass {
+    padding-right: 10px;
+    color: var(--primary-color);
+}
+  
+.navbar input[type=text] {
+    color: var(--primary-color);
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    font-size: small;
+    text-indent: 10px;
+    font-family: inherit;
+}
+
+.navbar input:focus {
+    outline: none;
+}
+
+.navbar input::placeholder {
+    color: var(--primary-color);
+}
+  
+
+/*---ikone---*/
+
+.navbar #icons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1em;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navbar #icons a{
+    display: inline;
+    padding: 10px;
+}
+
+.submenu {
+    display:none;
+    background-color: var(--primary-color);
+}
+
+.smjerovi {
+    display:none;
+    background-color: var(--light-primary-color);
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+.smjer1,  .smjer2, .smjer3, .smjer4, .smjer5{
+    display:none;
+    background-color: var(--primary-color);;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.godina120, .godina130, .godina140{
+    display:none;
+    background-color: var(--light-primary-color);;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.kolegiji120_1, .kolegiji120_2, .kolegiji120_3{
+    display:none;
+    background-color: var(--primary-color);;
+    width: 200px;
+    padding: 10px;
+    
+}
+
+.actions:hover{
+    cursor: pointer;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+}
+
+.navbar .fa-magnifying-glass:hover{
+    cursor: pointer;
+}
+
+
+/*-----scrollbar---*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+   
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #48487ccd; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #26266fcd; 
+    
+  }
+
+
+  /*----footer----*/
+
+  footer {
+    width: 100%;
+    height: 30px;
+    display: grid;
+    background-color: #10102c;
+    color: var(--white-trans);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    
+  }

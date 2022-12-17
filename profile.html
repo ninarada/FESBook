@@ -5,30 +5,110 @@
   <title>FESBook</title>
   <link rel="stylesheet" href="../styles/style.css" />
   <link rel="stylesheet" href="../styles/hp.css" />
+  <link rel="stylesheet" href="styles/nav.css" />
   <link rel="icon" href="pics/icons/logo.ico" />
   <script
     src="https://kit.fontawesome.com/fbcc69f44a.js"
     crossorigin="anonymous"
   ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="menu.js"></script>
 </head>
 
 <body>
   <nav class="navbar">
-    <span class="logo">
+    <div class="logo">
       <span><img src="pics/icons/logo.ico"></img></span>
       <span>FESBook</span>
-      </span
-    >
-    <span class="search-container">
-      <input type="text" class="searchbar" placeholder="Search.." />
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </span>
-    <span id="icons">
+    </div>
+    <div class="search-container">
+        <input type="text" class="searchbar" placeholder="Search.." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div id="icons">
       <a href="homepage.html"> <i class="fa-solid fa-house"></i></a>
       <a href="profile.html"><i class="fa-solid fa-user"></i></a>
       <a href="upload.html"><i class="fa-solid fa-upload"></i></a>
-      <i class="fa-solid fa-bars"></i>
-    </span>
+      <a id="menu">
+        <span class="actions"><span><i class="fa-solid fa-bars"></i></span></span>
+            <!-------------------------------------------PREDIPLOMSKI------------------------------------>
+            <li class="smjerovi">Prediplomski</li>
+            <!---Računarstvo--->
+            <li class="smjer1">Računarstvo</li>
+            <li class="godina120">1.godina</li>
+            <li class="kolegiji120_1">Elektrotehnika</li>
+            <li class="kolegiji120_1">Fizika 1</li>
+            <li class="kolegiji120_1">Matematika 1</li>
+            <li class="kolegiji120_1">Uvod u računala i programiranje</li>
+            <li class="kolegiji120_1">Engleski jezik 1</li>
+            <li class="kolegiji120_1">Elektronika</li>
+            <li class="kolegiji120_1">Fizika 2</li>
+            <li class="kolegiji120_1">Matematika 2</li>
+            <li class="kolegiji120_1">Programiranje</li>
+            <li class="kolegiji120_1">Engleski jezik 2</li>
+
+            <li class="godina120">2.godina</li>
+            <li class="kolegiji120_2">Diskretni sustavi i strukture</li>
+            <li class="kolegiji120_2">Objektno orijentirano programiranje</li>
+            <li class="kolegiji120_2">Diskretna matematika</li>
+            <li class="kolegiji120_2">Strukture podataka</li>
+            <li class="kolegiji120_2">Komunikacijske vještine</li>
+            <li class="kolegiji120_2">Praktikum</li>
+            <li class="kolegiji120_2">Algoritmi</li>
+            <li class="kolegiji120_2">Arhitektura digitalnih računala</li>
+            <li class="kolegiji120_2">Baze podataka</li>
+            <li class="kolegiji120_2">Signali i sustavi</li>
+            <li class="kolegiji120_2">Vjerojatnost i statistika</li>
+
+            <li class="godina120">3.godina</li>
+            <li class="kolegiji120_3">Operacijski sustavi</li>
+            <li class="kolegiji120_3">Programsko inženjerstvo</li>
+            <li class="kolegiji120_3">Programiranje za Internet</li>
+            <li class="kolegiji120_3">Računalne mreže</li>
+            <li class="kolegiji120_3">Programiranje za UNIX</li>
+            <li class="kolegiji120_3">Sigurnost računala i podataka</li>
+            <li class="kolegiji120_3">Projektiranje informacijskih sustava</li>
+            <li class="kolegiji120_3">Uvod u distribuirane informacijske sustave</li>
+            <li class="kolegiji120_3">Poslovna informatika</li>
+            <li class="kolegiji120_3">Inženjerska ekonomika</li>
+            <li class="kolegiji120_3">Obrada signala</li>
+
+            <!---Strojarstvo--->
+            <li class="smjer1">Strojarstvo</li>
+            <li class="godina130">1.godina</li>
+            <li class="godina130">2.godina</li>
+            <li class="godina130">3.godina</li>
+            <!---Brodogradnja--->
+            <li class="smjer1">Brodogradnja</li>
+            <li class="godina140">1.godina</li>
+            <li class="godina140">2.godina</li>
+            <li class="godina140">3.godina</li>
+
+            <!--------------------------------------------STRUCNI-------------------------------------->
+            <li class="smjerovi">Stručni</li>
+            <li class="smjer2">Računarstvo</li>
+            <li class="smjer2">Strojarstvo</li>
+            <li class="smjer2">Brodogradnja</li>
+
+            <!----------------------------------------RAZLIKOVNI---------------------------------------->
+            <li class="smjerovi">Razlikovni</li>
+            <li class="smjer3">Računarstvo</li>
+            <li class="smjer3">Strojarstvo</li>
+            <li class="smjer3">Brodogradnja</li>
+
+            <!----------------------------------------------DIPLOMSKI-------------------------------------->
+            <li class="smjerovi">Diplomski</li>
+            <li class="smjer4">Računarstvo</li>
+            <li class="smjer4">Strojarstvo</li>
+            <li class="smjer4">Brodogradnja</li>
+
+            <!---------------POSLIJEDIPLOMSKI---------------->
+            <li class="smjerovi">Poslijediplomski</li>
+            <li class="smjer5">Računarstvo</li>
+            <li class="smjer5">Strojarstvo</li>
+            <li class="smjer5">Brodogradnja</li>
+        </a>
+    </div>
   </nav>
   <main>
     <div class="heading-userdataicon">

@@ -26,3 +26,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "grid";
   dots[slideIndex-1].className += " active";
 }
+
+
