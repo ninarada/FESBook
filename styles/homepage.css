@@ -81,7 +81,7 @@ h1, h2 {
 .file-container {
     place-items: center;
     grid-template-columns: 1fr;
-    height: 100%;
+    height: inherit;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -161,6 +161,8 @@ h1, h2 {
     to {opacity: 1}
   }
 
+  
+/*
 .preview-container {
     width: 100%;
     display: grid;
@@ -168,7 +170,7 @@ h1, h2 {
     place-items: center;
     height: 400px;
   }
-/*
+
 .file-container {
     display: grid;
     place-items: center;
