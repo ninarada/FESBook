@@ -53,3 +53,33 @@ a:active {
     display: flex;
     border-radius: 1rem;
 }
+
+main {
+    padding-top: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(15,16,63,1) 20%, rgba(47,47,138,1) 100%);
+    padding-bottom: 100px;
+}
+
+.subject-container{
+    display: flex;
+    width: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--light-primary-color);
+    color: rgba(255, 255, 255, 0.871);
+}
+
+li{
+    font-size: smaller;
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+.description li:hover{
+    color: none;
+}

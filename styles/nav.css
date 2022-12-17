@@ -153,7 +153,6 @@
     background-color: var(--primary-color);;
     width: 200px;
     padding: 10px;
-    
 }
 
 .actions:hover{
@@ -209,3 +208,10 @@
     align-content: center;
     
   }
+
+  li:hover{
+    background-color: rgb(85, 49, 202);
+    color: aliceblue;
+  }
+
+ 

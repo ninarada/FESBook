@@ -62,3 +62,11 @@ $(function() {
         } 
     });
 });
+
+function goToNewPage()
+    {
+        var url = document.querySelectorAll('li').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
