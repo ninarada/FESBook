@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 /*-----opcija 1(iz hp.css)---------*/
-
+/* 
 body {
     font-family: 'Sora', sans-serif;
     margin: 0;
@@ -34,11 +34,11 @@ main {
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 
 /*-------------Opcija 2 (iz style.css)------------------*/
-/*
+
 body {
     font-family: 'Sora', sans-serif;
     margin: 0;
@@ -60,7 +60,7 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
-*/
+
 
 
 /*--------------------------------------------------------*/
