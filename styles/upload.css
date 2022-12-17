@@ -1,0 +1,60 @@
+button:hover{
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+input::placeholder {
+    color: rgb(37, 36, 39);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: rgb(85, 49, 202);
+    padding: 0.5em;
+    border: thin solid grey;
+    border-radius: 3px;
+}
+
+::file-selector-button:hover {
+    background-color: rgb(85, 49, 202);
+    color: aliceblue;
+}
+
+.img-container{
+    display: grid;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 10px;;
+    margin:auto;
+    justify-content: center;
+    height: 180px;
+    justify-content: center;
+}
+
+#upload-img{
+    height: 80%;
+}
+
+#upload-file:hover, #description:hover, .log-container input:hover {
+    border-color: transparent;
+    box-shadow: 0 0 0 1px rgb(192, 82, 247);
+  }
+
+  .usrimg-container {
+    display: flex;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 10px;;
+    margin:auto;
+    justify-content: center;
+    height: 180px;
+    justify-content: center;
+  }
+  
