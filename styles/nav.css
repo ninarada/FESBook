@@ -83,7 +83,12 @@
 }
 
 .navbar input::placeholder {
-    color: var(--primary-color);
+    color: rgb(37, 36, 39);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
   
 
@@ -101,6 +106,19 @@
     display: inline;
     padding: 10px;
 }
+
+.navbar a:hover{
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+/*
+.navbar a.active{
+    fill: orange;
+}
+*/
+
+/*-------meni-------*/
 
 .submenu {
     display:none;

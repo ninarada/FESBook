@@ -1,3 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+
+body {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    --primary-color: #0F103F;
+    --light-primary-color: #2F2F8A;
+
+    --secondary-color: #3a3db3;
+    --light-secondary-color: #778df8;
+
+    --font1: white;
+    --font2: black;
+
+    --white-trans:rgba(255, 255, 255, 0.4);
+    
+    width: 100%;
+    place-items: center;
+    justify-content: center;
+
+    
+}
+main {
+    padding-top: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(15,16,63,1) 20%, rgba(47,47,138,1) 100%);
+    padding-bottom: 100px;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 /*----------------------------------------------------*/
 .welcome-card-container {
     width: 100%;
@@ -161,7 +202,7 @@ h1, h2 {
     to {opacity: 1}
   }
 
-  
+
 /*
 .preview-container {
     width: 100%;
