@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+
+body {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    --primary-color: #0F103F;
+    --light-primary-color: #2F2F8A;
+
+    --secondary-color: #3a3db3;
+    --light-secondary-color: #778df8;
+    background-color: var(--primary-color);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(15,16,63,1) 59%, rgba(47,47,138,1) 100%);
+
+}
+/* body {
+    padding-top: 50px;
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background: linear-gradient(180deg, rgba(15, 16, 63, 1) 20%, rgba(47, 47, 138, 1) 100%);
+    padding-bottom: 100px; 
+    display: flex;
+    background-color: red;
+    align-items: center;
+    flex-direction: column;
+
+} */
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    padding-top: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(15,16,63,1) 20%, rgba(47,47,138,1) 100%);
+    padding-bottom: 100px;
+}
+
+.subject-container{
+    background-color: var(--light-primary-color);
+    color: rgba(255, 255, 255, 0.871);
+    display: grid;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+li{
+    font-size: smaller;
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    .subject-container {
+        height: 50%;
+    }
+    #cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .subject-container {
+        height: 80%;
+    }
+    #cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ects {
+    font-style: italic;
+    color:darksalmon;
+}
+.fa-star-o, .fa-star {
+    color:blueviolet;
+}
+
+h3, .card-description {
+    color: azure;
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+}
+
+#cards-container .card {
+    padding: 0.3em;
+    text-align: justify;
+    position: relative;
+}
+
+.card p:last-of-type {
+    margin-bottom: 2em;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Create three equal columns that floats next to each other */
+.card {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+  
+  /* Clear floats after the columns */
+  .cards-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .btn {
+    background-color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.898);
+    border: none;
+    border-radius: 20px;
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    box-shadow: 1px 1px 5px #0f103f7b;
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.btn:hover{
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+.btn-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.card .card-star-container {
+    bottom: 0.5em;
+    left: 0.5em;
+    cursor: pointer;
+}

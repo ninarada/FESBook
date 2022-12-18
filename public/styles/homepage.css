@@ -287,3 +287,7 @@ ul {
     list-style-type: none;
     position: absolute;
   }
+
+.gotopage {
+    position: relative;
+}

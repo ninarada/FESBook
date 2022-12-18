@@ -209,7 +209,7 @@
     
   }
 
-  li:hover{
+  li:not(.description li):hover{
     background-color: rgb(85, 49, 202);
     color: aliceblue;
   }

@@ -2,10 +2,9 @@
 <head>
   <meta charset="utf-8" />
   <title>FESBook</title>
-
-  <link rel="stylesheet" href="styles/homepage.css" />
-  <link rel="stylesheet" href="styles/nav.css" />
-  <link rel="icon" href="pics/icons/logo.ico" />
+  <link rel="stylesheet" href="../../../styles/nav.css" />
+  <link rel="stylesheet" href="../../../styles/kolegij.css"/>
+  <link rel="icon" href="../../../pics/icons/logo.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -21,13 +20,12 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
-  
+  <script src="../../../js/menu.js"></script>
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">
-      <span><img src="pics/icons/logo.ico"></img></span>
+      <span><img src="../../../pics/icons/logo.ico"></img></span>
       <span>FESBook</span>
     </div>
     <div class="search-container">
@@ -35,13 +33,12 @@
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div id="icons">
-      <a href="homepage.html"> <i class="fa-solid fa-house"></i></a>
-      <a href="profile.html"><i class="fa-solid fa-user"></i></a>
-      <a href="upload.html"><i class="fa-solid fa-upload"></i></a>
-      <a id="menu"> 
-        <span class="actions" ><span><i class="fa-solid fa-bars"></i></span> </span>
+      <a href="../../../homepage.html"> <i class="fa-solid fa-house"></i></a>
+      <a href="../../../profile.html"><i class="fa-solid fa-user"></i></a>
+      <a href="../../../upload.html"><i class="fa-solid fa-upload"></i></a>
+      <a id="menu">
+        <span class="actions"><span><i class="fa-solid fa-bars"></i></span></span>
             <!-------------------------------------------PREDIPLOMSKI------------------------------------>
-
             <li class="smjerovi">Prediplomski</li>
             <!---Računarstvo--->
             <li class="smjer1">Računarstvo</li>
@@ -117,60 +114,84 @@
             <li class="smjer5">Računarstvo</li>
             <li class="smjer5">Strojarstvo</li>
             <li class="smjer5">Brodogradnja</li>
-          </a> 
-    </div> 
+        </a>
+    </div>
   </nav>
   <main>
-    <div class="welcome-card-container">
-      <div class="big-txt-container">
-        <h1>Welcome to FESBook!</h1>
-        <h2 id="homepage-welcome">A place where you can find all you need during your studies</h2>
-        <hr class="hr">
-        <p id="homepage-description">Sign up now and become one of our users</p>
-        <a class="to-signup" href="signup.html">
-        <button class="to-signup-btn">SIGN UP</button></a>
-      </div>
-      <div class="header-img-container">
-        <img src="pics/main.png" alt="header.txt" id="header-img" />
-      </div>
-    </div>
-    <div class="text-preview">
-      
-    </div>
-    <div class="preview-container">
-      <p class="text2">Popularni materijali:</p>
-      <div class="file-container">
-        <img src="pics/covers/file1.png" />
-        <p class="text">Uvod u programsko inženjerstvo</p>
+   <div class="subject-container">
+        <h1 class="subject-name">Programsko inženjerstvo</h1>
+        <p class="ects">predmet srednje razine - 7 ECTS</p>
+        <div class="text-container">
+            <p>Osposobljavanje studenata za:</p>
+            <ul class="description">
+                <li>    razumijevanje i primjenu temeljnih znanja o <span style="font-weight:bold">inženjerskom pristupu</span> razvoju softvera,</li>
+                <li>    <span style="font-weight:bold">pisanje dokumenata </span>specifikacije korisničkih zahtijeva, dizajna arhitekture i testnog plana kod razvoja softvera,</li>
+                <li>    omogućiti primjenu stečenog znanja na stvarnom primjeru <span style="font-weight:bold">razvoja softvera</span>.</li>
+            </ul>
+        </div>
+   </div>
+
+   <div class="cards-container">
+    <div class="card">
+      <img src="../../../pics/covers/3.png" alt="pi-softverskiprocesi">
+      <h3><span class="card-title-label">Softverski procesi</span> <i class="fa fa-heart-o heart-icon clickable-icon" style='color: white'></i></h3>
+          <p class="card-description">
+            Prezentacija za poglavlje Softverski procesi.   </p>
+          <p class="card-description">Gradivo prvoga kolokvija.</p>  
+          <div class="card-star-container">
+            <i class="star-icon fa fa-star-o" aria-hidden="true" ></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="btn-container">
         <button type="button" class="btn">Preuzmi</button>
       </div>
-      
-      <div class="file-container">
-        <img src="pics/covers/2.png" />
-        <p class="text">RM: upute za laboratorijske vježbe</p>
-        <button type="button" class="btn">Preuzmi</button>
       </div>
 
-      <div class="file-container">
-        <img src="pics/covers/3.png" />
-        <p class="text">Softverski procesi</p>
-        <button type="button" class="btn">Preuzmi</button>
+    <div class="card">
+      <img src="../../../pics/covers/3.png" alt="pi-agilni-razvoj-softvera">
+      <h3><span class="card-title-label">Agilni razvoj softvera</span> <i class="fa fa-heart-o heart-icon clickable-icon" style='color: white'></i></h3>
+          <p class="card-description">
+              Prezentacija za poglavlje Agilni razvoj softvera.   </p>
+            <p class="card-description">Gradivo prvoga kolokvija.</p>  
+
+          <div class="card-star-container">
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn">Preuzmi</button>
+        </div>
       </div>
 
-      <div class="file-container">
-        <img src="pics/covers/4.png" />
-        <p class="text">Agilni razvoj softvera</p>
-        <button type="button" class="btn">Preuzmi</button>
+    <div class="card">
+      <img src="../../../pics/covers/1.png" alt="pi-uvod-u-programsko-injzenjerstvo">
+      <h3><span class="card-title-label">Uvod u programsko inzenjerstvo</span> <i class="fa fa-heart-o heart-icon clickable-icon"></i></h3>
+      <p class="card-description">
+        Prezentacija za poglavlje Uvod u programsko inzenjerstvo.   </p>
+      <p class="card-description">Gradivo prvoga kolokvija.</p>  
+          <div class="card-star-container">
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn">Preuzmi</button>
+        </div>
       </div>
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+   </div>
+    
   </main>
 
-  <footer>
-    <p>Copyright FESBook @ 2022 Split</p>
-  </footer>
-
-  <script src="js/homepage.js"></script>
+  <script src="../../../js/cards.js"></script>
 </body>
+
+

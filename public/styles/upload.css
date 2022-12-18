@@ -133,7 +133,7 @@ input::file-selector-button {
     box-shadow: 0 0 0 1px rgb(192, 82, 247);
   }
 
-  .usrimg-container {
+.usrimg-container {
     display: flex;
     top:0;
     left:0;
