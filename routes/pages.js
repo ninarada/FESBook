@@ -7,11 +7,11 @@ router.get('/', (req, res) => {
 });
 
 router.get('/register', (req, res) => {
-    res.render("signup.html", {root:"./public"} );
+    res.render("public/signup.html", {root:"./public"} );
 });
 
 router.get('/login', (req, res) => {
-    res.render("login.html", {root:"./public"} );
+    res.render("public/login.html", {root:"./public"} );
 });
 
 module.exports = router;

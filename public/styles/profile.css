@@ -53,6 +53,7 @@ body {
     place-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(15,16,63,1) 59%, rgba(47,47,138,1) 100%);
+    --white-trans:rgba(255, 255, 255, 0.4);
 
 }
 

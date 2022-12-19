@@ -29,11 +29,11 @@ app.get('/register', (req, res) =>{
 
 });
 
-app.post('/registerPost', (req, res) => {
+app.post('/registerPost', (req, res) => { //povrat 
     console.log(req.body);
 });
 
-app.set('view engine', 'hbs');
+//app.set('view engine', 'hbs');
 
 db.connect( (error) => {
     if(error){
@@ -47,4 +47,4 @@ app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
 
 
-app.listen(8080, () => console.log('Listening on http://localhost:8080/ Use 8080/homepage.html for access to the website'));
+app.listen(8080, () => console.log('Listening on http://localhost:8080/ || Use 8080/homepage.html for access to the website'));

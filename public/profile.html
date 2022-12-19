@@ -24,12 +24,13 @@
       <span>FESBook</span>
     </div>
     <div class="search-container">
-        <input type="text" class="searchbar" placeholder="Search.." />
+        <input type="text" class="searchbar" placeholder="Search.." name="search" id="search" onkeypress="return searchKeyPress(event);">
+        <button id="searchBtn" onclick="location.href='search.html';" hidden></button>      
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div id="icons">
       <a href="homepage.html"> <i class="fa-solid fa-house"></i></a>
-      <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+      <a href="profile.html"><i class="fa-solid fa-user" style="color:lightsalmon"></i></a>
       <a href="upload.html"><i class="fa-solid fa-upload"></i></a>
       <a id="menu">
         <span class="actions"><span><i class="fa-solid fa-bars"></i></span></span>
@@ -64,7 +65,7 @@
 
             <li class="godina120">3.godina</li>
             <li class="kolegiji120_3">Operacijski sustavi</li>
-            <li class="kolegiji120_3">Programsko inženjerstvo</li>
+            <li class="kolegiji120_3" onclick="location.href='kolegiji/120/3/proging.html';">Programsko inženjerstvo </li>
             <li class="kolegiji120_3">Programiranje za Internet</li>
             <li class="kolegiji120_3">Računalne mreže</li>
             <li class="kolegiji120_3">Programiranje za UNIX</li>
@@ -155,4 +156,5 @@
       <input type="text" name="username" id="username" placeholder="Username" />
     </div> -->
   </main>
+  <script src="js/searchother.js"></script>
 </body>

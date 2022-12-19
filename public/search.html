@@ -2,8 +2,9 @@
 <head>
   <meta charset="utf-8" />
   <title>FESBook</title>
-  <link rel="stylesheet" href="styles/upload.css" />
   <link rel="stylesheet" href="styles/nav.css" />
+  <link rel="stylesheet" href="styles/kolegij.css"/>
+  <link rel="stylesheet" href="styles/search.css"/>
   <link rel="icon" href="pics/icons/logo.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,14 +30,14 @@
       <span>FESBook</span>
     </div>
     <div class="search-container">
-      <input type="text" class="searchbar" placeholder="Search.." name="search" id="search" onkeypress="return searchKeyPress(event);">
-      <button id="searchBtn" onclick="location.href='search.html';" hidden></button>      
+        <input type="text" class="searchbar" placeholder="Search.." name="search" id="search" onkeypress="return searchKeyPress(event);">
+        <button id="searchBtn" onclick="location.href='search.html';" hidden></button>  
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div id="icons">
       <a href="homepage.html"> <i class="fa-solid fa-house"></i></a>
       <a href="profile.html"><i class="fa-solid fa-user"></i></a>
-      <a href="upload.html"><i class="fa-solid fa-upload" style="color:lightsalmon"></i></a>
+      <a href="upload.html"><i class="fa-solid fa-upload"></i></a>
       <a id="menu">
         <span class="actions"><span><i class="fa-solid fa-bars"></i></span></span>
             <!-------------------------------------------PREDIPLOMSKI------------------------------------>
@@ -119,23 +120,71 @@
     </div>
   </nav>
   <main>
-    <div class="img-container">
-      <img src="pics/upload.png" alt="upload-img.txt" id="upload-img" />
-    </div>
+   <div class="cards-container">
+    <div class="card">
+      <img src="pics/covers/3.png" alt="pi-softverskiprocesi">
+      <h3><span class="card-title-label">Softverski procesi</span> <i class="fa fa-heart-o heart-icon clickable-icon" style='color: white'></i></h3>
+          <p class="card-description">
+            Prezentacija za poglavlje Softverski procesi.   </p>
+          <p class="card-description">Gradivo prvoga kolokvija.</p>  
+          <div class="card-star-container">
+            <i class="star-icon fa fa-star-o" aria-hidden="true" ></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="btn-container">
+          <a href="files/softverski-procesi.pdf" download="softverski-procesi" >
+        <button type="button" class="btn">Preuzmi</button></a>
+      </div>
+      </div>
 
-    <div class="upload-container">
-      <form id="upload-form">
-        <input type="file" name="file" id="upload-file" /><br />
-        <input
-          type="text"
-          name="description"
-          id="description"
-          placeholder="Opis datoteke . . ."
-        /><br />
-        <button type="button" class="upload-btn">Upload</button>
-      </form>
-    </div>
-    <div class="lineH"></div>
+    <div class="card">
+      <img src="pics/covers/3.png" alt="pi-agilni-razvoj-softvera">
+      <h3><span class="card-title-label">Agilni razvoj softvera</span> <i class="fa fa-heart-o heart-icon clickable-icon" style='color: white'></i></h3>
+          <p class="card-description">
+              Prezentacija za poglavlje Agilni razvoj softvera.   </p>
+            <p class="card-description">Gradivo prvoga kolokvija.</p>  
+
+          <div class="card-star-container">
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="btn-container">
+          <a href="files/agilni-razvoj-softvera.pdf" download="agilni-razvoj-softvera" >
+          <button type="button" class="btn">Preuzmi</button></a>
+        </div>
+      </div>
+
+    <div class="card">
+      <img src="pics/covers/1.png" alt="pi-uvod-u-programsko-injzenjerstvo">
+      <h3><span class="card-title-label">Uvod u programsko inzenjerstvo</span> <i class="fa fa-heart-o heart-icon clickable-icon"></i></h3>
+      <p class="card-description">
+        Prezentacija za poglavlje Uvod u programsko inzenjerstvo.   </p>
+      <p class="card-description">Gradivo prvoga kolokvija.</p>  
+          <div class="card-star-container">
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+            <i class="star-icon fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="btn-container">
+          <a href="files/uvod-u-programsko-inzenjerstvo.pdf" download="uvod-u-programsko-inzenjerstvo" >
+          <button type="button" class="btn">Preuzmi</button></a>
+        </div>
+      </div>
+
+   </div>
+    
   </main>
-  <script src="js/searchother.js"></script>
+
+  <script src="js/cards.js"></script>
+  <script src="js/search.js"></script>
 </body>
+
+

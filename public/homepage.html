@@ -22,6 +22,7 @@
   ></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
+
   
 </head>
 <body>
@@ -31,11 +32,12 @@
       <span>FESBook</span>
     </div>
     <div class="search-container">
-        <input type="text" class="searchbar" placeholder="Search.." />
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="searchbar" placeholder="Search.." name="search" id="search" onkeypress="return searchKeyPress(event);">
+        <button id="searchBtn" onclick="location.href='search.html';" hidden></button>      
+        <i class="fa-solid fa-magnifying-glass" id="magnify"></i>
     </div>
     <div id="icons">
-      <a href="homepage.html"> <i class="fa-solid fa-house"></i></a>
+      <a href="homepage.html"> <i class="fa-solid fa-house" style="color:lightsalmon"></i></a>
       <a href="profile.html"><i class="fa-solid fa-user"></i></a>
       <a href="upload.html"><i class="fa-solid fa-upload"></i></a>
       <a id="menu"> 
@@ -177,4 +179,5 @@
   </footer>
 
   <script src="js/homepage.js"></script>
+  <script src="js/searchother.js"></script>
 </body>

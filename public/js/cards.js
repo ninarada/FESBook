@@ -1,3 +1,5 @@
+//favourite
+
 let heartIcons = document.querySelectorAll(".card .heart-icon");
 for(let i = 0; i < heartIcons.length; i++){
     let heartIcon = heartIcons[i];
@@ -16,6 +18,8 @@ function handleHeartIconClick(e){
         heartIcon.classList.add("fa-heart-o");
     }
 }
+
+//rating
 
 let starIcons = document.querySelectorAll(".card .star-icon");
 for(let i = 0; i < starIcons.length; i++){
@@ -54,4 +58,3 @@ function handleStarIconClick(e){
         }
     }
 }
-
