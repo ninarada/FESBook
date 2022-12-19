@@ -55,7 +55,7 @@ input {
 }
 
 
-.log-btn {
+.log-btn, .back-btn, .signup-btn {
     background-color: var(--secondary-color);
     color: rgba(255, 255, 255, 0.898);
     border: none;
@@ -75,6 +75,23 @@ input {
     margin: 0 auto;
 }
 
+.log-btn, .signup-btn{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
 
+#login-back-btn {
+    margin-top: 30px;
+}
 
+#signup-back-btn{
+    margin-top: 40px;
+}
 
+#email-login{
+    margin-top: 50px;
+}
+
+#password-login{
+    margin-bottom: 20px;
+}
