@@ -291,3 +291,13 @@ ul {
 .gotopage {
     position: relative;
 }
+
+.welcome-fesbook{
+    background: -webkit-linear-gradient(left, rgb(111, 131, 219) , rgb(202, 141, 239));
+   background: -o-linear-gradient(right, rgb(219, 152, 111), rgb(202, 141, 239));
+   background: -moz-linear-gradient(right, rgb(68, 211, 255), rgb(202, 141, 239));
+   background: linear-gradient(to right, rgb(53, 73, 255) , rgb(202, 141, 239)); 
+  -webkit-background-clip: text;
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

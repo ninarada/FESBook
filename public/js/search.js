@@ -1,7 +1,6 @@
 $("#search").keypress(function(event) {
 
-
-    let input = document.getElementById('search').value
+        let input = document.getElementById('search').value
         input = input.toLowerCase();
         let card = document.getElementsByClassName('card');
 

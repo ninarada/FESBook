@@ -32,7 +32,7 @@
       <span>FESBook</span>
     </div>
     <div class="search-container">
-        <input type="text" class="searchbar" placeholder="Search.." name="search" id="search" onkeypress="return searchKeyPress(event);">
+        <input type="text" class="searchbar" placeholder="Search.." name="search" id="search" onclick="redirectToSearch();">
         <button id="searchBtn" onclick="location.href='search.html';" hidden></button>      
         <i class="fa-solid fa-magnifying-glass" id="magnify"></i>
     </div>
@@ -125,7 +125,7 @@
   <main>
     <div class="welcome-card-container">
       <div class="big-txt-container">
-        <h1>Welcome to FESBook!</h1>
+        <h1>Welcome to <span class="welcome-fesbook">FESBook</span>!</h1>
         <h2 id="homepage-welcome">A place where you can find all you need during your studies</h2>
         <hr class="hr">
         <p id="homepage-description">Sign up now and become one of our users</p>
@@ -133,7 +133,7 @@
         <button class="to-signup-btn">SIGN UP</button></a>
       </div>
       <div class="header-img-container">
-        <img src="pics/main.png" alt="header.txt" id="header-img" />
+        <img src="pics/main.png" alt="header.txt" id="header-img"/>
       </div>
     </div>
     <div class="text-preview">
