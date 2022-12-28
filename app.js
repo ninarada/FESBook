@@ -5,6 +5,8 @@ const mysql = require("mysql");
 const dotenv = require('dotenv');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+const bodyParser = require('body-parser');
+var router = express.Router();
 
 var dir = path.join(__dirname, 'public');
 
@@ -23,6 +25,7 @@ const db = mysql.createConnection({
 
 const publicDirectory = path.join(__dirname, './public');
 //console.log(__dirname);
+app.use('/static', express.static(path.join(__dirname, 'public')))
 
 app.get('/register', (req, res) =>{
     res.sendFile(__dirname + '/public/signup.html');
@@ -33,7 +36,7 @@ app.post('/registerPost', (req, res) => { //povrat
     console.log(req.body);
 });
 
-//app.set('view engine', 'hbs');
+//app.set('view engine', 'ejs');
 
 db.connect( (error) => {
     if(error){
@@ -48,3 +51,7 @@ app.use('/auth', require('./routes/auth'));
 
 
 app.listen(8080, () => console.log('Listening on http://localhost:8080/ || Use 8080/homepage.html for access to the website'));
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + '/public/signup.html');
+  });

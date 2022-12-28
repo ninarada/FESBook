@@ -1,6 +1,7 @@
 const mysql = require("mysql");
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+const bodyParser = require("body-parser");
 
 const db = mysql.createConnection({
 host: process.env.DATABASE_HOST,
@@ -10,8 +11,11 @@ host: process.env.DATABASE_HOST,
 });
 
 
-exports.register = (req, res) => {
+/*exports.register = (req, res) => {
     console.log(req.body);
+*/
+
+app.post("/signup", async (req,res) => {
 
 
 const {indexno, email, password} = req.body;
@@ -43,3 +47,5 @@ db.query('SELECT id_number FROM user WHERE id_number = ?', [maticniBroj], async 
 });
 
 }
+);
+
