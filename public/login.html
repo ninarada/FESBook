@@ -28,23 +28,20 @@
       </a>
     </div>
     <div class="log-container">
-      <form name="login">
+      <form name="login" action="/login" method="post">
         <input
           type="email"
           name="email"
-          id="email-login"
+          id="email"
           placeholder="Email"
         /><br />
         <input
           type="password"
           name="password"
-          id="password-login"
+          id="password"
           placeholder="Password"
         /><br />
-        <a href="homepage.html">
-          <button type="button" class="log-btn">Log In</button>
-        </a>
-
+          <button type="submit" class="log-btn" id="log-btn" value="Login">Log In</button>
         <!--<a class="to-signup" href="signup.html">
           <button type="button" class="back-btn" id="login-back-btn">
             « Back

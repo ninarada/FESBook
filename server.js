@@ -7,6 +7,9 @@ const dotenv = require('dotenv');
 var path = require('path');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+let alert = require('alert'); 
+var session = require('express-session');
+var request = require('request');
 
 app.use(express.json()); //to accept data in json format
 app.use(express.urlencoded()); //this is to decode the data sent through html form
@@ -20,11 +23,23 @@ const db = mysql.createConnection({
     database: process.env.DATABASE,
 });
 
+/*app.use(session({
+	secret: 'secret',
+	resave: true,
+	saveUninitialized: true
+}));*/
+
 app.use(express.static('public'));
 
 router.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/public/homepage.html'));
     //__dirname : It will resolve to your project folder.
+    if (request.session.loggedin) {
+      response.send('Welcome back, ' + request.session.username + '!');
+    } else {
+      response.send('Please login to view this page!');
+    }
+    response.end();
   });
   
 router.get('/profile',function(req,res){
@@ -57,7 +72,8 @@ app.post('/signup', async (req,res) => {
         console.log(error); 
         }
         if(results.length > 0){
-        return res.send({ message: 'Email already in use!' });
+          alert('Email already in use!');
+          return;
         }
 
         let hashedPassword = await bcrypt.hash(password, 8);
@@ -68,12 +84,48 @@ app.post('/signup', async (req,res) => {
                 console.log(error);
             } else {
                 console.log(results);
-                return res.send({ message: 'User registered!' });
+                alert('Registered successfully!');
             }
         })
-
     });
+});
 
+//za prijavu! (ne radi)
+app.post('/login', async (request, response) => {
+
+	const {email, password} = request.body;
+  const hashedPassword = db.query('SELECT password FROM user WHERE email = ?', [email], async (error, results) => {
+    
+    const hashedPassword = results[0].password;
+
+    if (email && password) {
+      console.log(email, password);
+      console.log(hashedPassword);
+
+      db.query('SELECT * FROM user WHERE email = ? AND password = ?', [email, hashedPassword], async (error, results) => { 
+  
+        if (error) throw error;
+  
+        if (results > 0) 
+        {
+          /*request.session.loggedin = true;
+          request.session.email = email;*/
+          response.send('SUCCESS');
+        } 
+        else {
+          response.send('Incorrect Username and/or Password!');
+        }			
+        response.end();
+      });
+    } 
+    else {
+      response.send('Please enter Username and Password!');
+      response.end();
+    }
+  });
+  /*const passwordMatch = await bcrypt.compare(password, hashedPassword);*/
+
+	
 });
 
 app.listen(8080, () => {
