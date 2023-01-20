@@ -93,40 +93,26 @@ app.post('/signup', async (req,res) => {
 //za prijavu! (ne radi)
 app.post('/login', async (request, response) => {
 
-	const {email, password} = request.body;
-  const hashedPassword = db.query('SELECT password FROM user WHERE email = ?', [email], async (error, results) => {
-    
-    const hashedPassword = results[0].password;
+    const { email, password } = request.body;
 
-    if (email && password) {
-      console.log(email, password);
-      console.log(hashedPassword);
-
-      db.query('SELECT * FROM user WHERE email = ? AND password = ?', [email, hashedPassword], async (error, results) => { 
-  
-        if (error) throw error;
-  
-        if (results > 0) 
-        {
-          /*request.session.loggedin = true;
-          request.session.email = email;*/
-          response.send('SUCCESS');
-        } 
-        else {
-          response.send('Incorrect Username and/or Password!');
-        }			
-        response.end();
-      });
-    } 
-    else {
-      response.send('Please enter Username and Password!');
-      response.end();
+    if( !email || !password ) {
+      return res.status(400).render('login', {
+        message: 'Please provide an email and password'
+      })
     }
-  });
-  /*const passwordMatch = await bcrypt.compare(password, hashedPassword);*/
 
-	
-});
+    db.query('SELECT * FROM user WHERE email = ?', [email], async (error, results) => {
+      console.log(results);
+      if( !results || !(await bcrypt.compare(password, results[0].password)) ) {
+        response.status(401).render('login', {
+          message: 'Email or Password is incorrect'
+        })
+      } 
+      else {
+        return results.redirect('/');
+      }
+    })
+  });
 
 app.listen(8080, () => {
     console.log("Application started and Listening on port 8080!");
