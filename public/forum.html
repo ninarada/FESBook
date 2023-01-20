@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>FESBook</title>
+
+  <link rel="stylesheet" href="styles/homepage.css" />
+  <link rel="stylesheet" href="styles/nav.css" />
+  <link rel="icon" href="pics/icons/logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/fbcc69f44a.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <span><img src="pics/icons/logo.ico"></img></span>
+      <span>FESBook</span>
+    </div>
+    <div class="search-container">
+        <input type="text" class="searchbar" placeholder="Search.." name="search" id="search" onclick="redirectToSearch();">
+        <button id="searchBtn" onclick="location.href='search.html';" hidden></button>      
+        <i class="fa-solid fa-magnifying-glass" id="magnify"></i>
+    </div>
+    <div id="icons">
+      <a href="homepage.html"> <i class="fa-solid fa-house" style="color:lightsalmon"></i></a>
+      <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+      <a href="upload.html"><i class="fa-solid fa-upload"></i></a>
+      <a id="menu"> 
+        <span class="actions" ><span><i class="fa-solid fa-bars"></i></span> </span>
+            <!-------------------------------------------PREDIPLOMSKI------------------------------------>
+
+            <li class="smjerovi">Prediplomski</li>
+            <!---Računarstvo--->
+            <li class="smjer1">Računarstvo</li>
+            <li class="godina120">1.godina</li>
+            <li class="kolegiji120_1">Elektrotehnika</li>
+            <li class="kolegiji120_1">Fizika 1</li>
+            <li class="kolegiji120_1">Matematika 1</li>
+            <li class="kolegiji120_1">Uvod u računala i programiranje</li>
+            <li class="kolegiji120_1">Engleski jezik 1</li>
+            <li class="kolegiji120_1">Elektronika</li>
+            <li class="kolegiji120_1">Fizika 2</li>
+            <li class="kolegiji120_1">Matematika 2</li>
+            <li class="kolegiji120_1">Programiranje</li>
+            <li class="kolegiji120_1">Engleski jezik 2</li>
+
+            <li class="godina120">2.godina</li>
+            <li class="kolegiji120_2">Diskretni sustavi i strukture</li>
+            <li class="kolegiji120_2">Objektno orijentirano programiranje</li>
+            <li class="kolegiji120_2">Diskretna matematika</li>
+            <li class="kolegiji120_2">Strukture podataka</li>
+            <li class="kolegiji120_2">Komunikacijske vještine</li>
+            <li class="kolegiji120_2">Praktikum</li>
+            <li class="kolegiji120_2">Algoritmi</li>
+            <li class="kolegiji120_2">Arhitektura digitalnih računala</li>
+            <li class="kolegiji120_2">Baze podataka</li>
+            <li class="kolegiji120_2">Signali i sustavi</li>
+            <li class="kolegiji120_2">Vjerojatnost i statistika</li>
+
+            <li class="godina120">3.godina</li>
+            <li class="kolegiji120_3">Operacijski sustavi</li>
+            <li class="kolegiji120_3" onclick="location.href='kolegiji/120/3/proging.html';">Programsko inženjerstvo </li>
+            <li class="kolegiji120_3">Programiranje za Internet</li>
+            <li class="kolegiji120_3">Računalne mreže</li>
+            <li class="kolegiji120_3">Programiranje za UNIX</li>
+            <li class="kolegiji120_3">Sigurnost računala i podataka</li>
+            <li class="kolegiji120_3">Projektiranje informacijskih sustava</li>
+            <li class="kolegiji120_3">Uvod u distribuirane informacijske sustave</li>
+            <li class="kolegiji120_3">Poslovna informatika</li>
+            <li class="kolegiji120_3">Inženjerska ekonomika</li>
+            <li class="kolegiji120_3">Obrada signala</li>
+
+            <!---Strojarstvo--->
+            <li class="smjer1">Strojarstvo</li>
+            <li class="godina130">1.godina</li>
+            <li class="godina130">2.godina</li>
+            <li class="godina130">3.godina</li>
+            <!---Brodogradnja--->
+            <li class="smjer1">Brodogradnja</li>
+            <li class="godina140">1.godina</li>
+            <li class="godina140">2.godina</li>
+            <li class="godina140">3.godina</li>
+
+            <!--------------------------------------------STRUCNI-------------------------------------->
+            <li class="smjerovi">Stručni</li>
+            <li class="smjer2">Računarstvo</li>
+            <li class="smjer2">Strojarstvo</li>
+            <li class="smjer2">Brodogradnja</li>
+
+            <!----------------------------------------RAZLIKOVNI---------------------------------------->
+            <li class="smjerovi">Razlikovni</li>
+            <li class="smjer3">Računarstvo</li>
+            <li class="smjer3">Strojarstvo</li>
+            <li class="smjer3">Brodogradnja</li>
+
+            <!----------------------------------------------DIPLOMSKI-------------------------------------->
+            <li class="smjerovi">Diplomski</li>
+            <li class="smjer4">Računarstvo</li>
+            <li class="smjer4">Strojarstvo</li>
+            <li class="smjer4">Brodogradnja</li>
+
+            <!---------------POSLIJEDIPLOMSKI---------------->
+            <li class="smjerovi">Poslijediplomski</li>
+            <li class="smjer5">Računarstvo</li>
+            <li class="smjer5">Strojarstvo</li>
+            <li class="smjer5">Brodogradnja</li>
+          </a> 
+    </div> 
+  </nav>
+  <main>
+    <div class="container-fluid mt-100">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <div class="media flex-wrap w-100 align-items-center"> <img src="https://i.imgur.com/iNmBizf.jpg" class="d-block ui-w-40 rounded-circle" alt="">
+                            <div class="media-body ml-3"> <a href="javascript:void(0)" data-abc="true">Tom Harry</a>
+                                <div class="text-muted small">13 days ago</div>
+                            </div>
+                            <div class="text-muted small ml-3">
+                                <div>Member since <strong>01/01/2023</strong></div>
+                                <div><strong>74</strong> posts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p> For me, getting my business website made was a lot of tech wizardry things. Thankfully i get an ad on Facebook ragarding commence website. I get connected with BBB team. They made my stunning website live in just 3 days.
+                            With the increase demand of online customers. I had to take my business online. BBB Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.
+                        </p>
+                        <p> For me, getting my business website made was a lot of tech wizardry things. Thankfully i get an ad on Facebook ragarding commence website. I get connected with BBB team. They made my stunning website live in just 3 days.
+                            With the increase demand of online customers. I had to take my business online. BBB Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
+                        <div class="px-4 pt-3"> <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle" data-abc="true"> <i class="fa fa-heart text-danger"></i>&nbsp; <span class="align-middle">445</span> </a> <span class="text-muted d-inline-flex align-items-center align-middle ml-4"> <i class="fa fa-eye text-muted fsize-3"></i>&nbsp; <span class="align-middle">14532</span> </span> </div>
+                        <div class="px-4 pt-3"> <button type="button" class="btn btn-primary"><i class="ion ion-md-create"></i>&nbsp; Reply</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright FESBook @ 2022 Split</p>
+  </footer>
+
+  <script src="js/homepage.js"></script>
+  <script src="js/searchother.js"></script>
+</body>
